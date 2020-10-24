@@ -44,12 +44,11 @@ nav {
     color: #fff;
     padding-left: 10px;
     padding-right: 10px;
-    transition: color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-menu li a:hover {
     color: #F2AC32;
-
 }
 
 .header-title-1 {
@@ -81,11 +80,6 @@ nav {
 .header-cta-button:hover {
     background-color: rgb(196, 137, 36);
 
-}
-
-.search {
-    margin-left: 15px;
-    margin-right: 20px;
 }
 
 .my-bag {
@@ -164,6 +158,7 @@ nav {
 .food-1 {
     background-image: url("../images/burger.jpg");
     background-size: cover;
+    background-position: center;
     margin-top: -30px;
     -webkit-box-shadow: 1px 2px 14px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 2px 14px 2px rgba(0,0,0,0.75);
@@ -171,8 +166,9 @@ nav {
 }
 
 .food-2 {
-    background-image: url("../images/pasta.jpg");
+    background-image: url("../images/pasta-shrimp.jpg");
     background-size: cover;
+    background-position: center;
     -webkit-box-shadow: 1px 2px 14px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 2px 14px 2px rgba(0,0,0,0.75);
     box-shadow: 1px 2px 14px 2px rgba(0,0,0,0.75);
@@ -183,7 +179,7 @@ nav {
 .specialities-section {
     background: 
         linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)),
-        url("../images/fire.jpeg");
+        url("../images/ingredients-background.jpg");
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -320,7 +316,8 @@ nav {
     flex-wrap: wrap;
 }
 
-.special-menu-h1 {
+.special-menu-h1,
+.our-menu-h1 {
     font-family: 'Rochester', cursive;
     color: #F2AC32;
     margin-bottom: 15px;
@@ -479,5 +476,74 @@ nav {
 .separator-orange {
     border-bottom: 2px solid #F2AC32;
 }
-
 /************* END SPECIAL MENU SECTION **************/
+
+/********** START OUR MENU SECTION ***********/
+.our-menu-section {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),
+        url(../images/ingredients.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.our-menu-h2 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.food-container {
+    color: #fff;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 25px;
+}
+
+.our-menu-row {
+    display: flex;
+    justify-content: center;
+}
+
+.our-menu-col {
+    width: 335px;
+    margin: 30px;
+}
+
+.food-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.food-price {
+    font-size: 25px;
+    color: #F2AC32;
+}
+
+.food-ingredients {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.our-menu-button {
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.our-menu-button:hover {
+    background-color: #f2ac32a9;
+    padding: 10px 20px;
+}
+/********** END OUR MENU SECTION ***********/
