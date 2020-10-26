@@ -149,6 +149,7 @@ nav {
     font-size: 16px;
     text-decoration: none;
     color: #F2AC32;
+    transition: all 0.3s ease-in-out;
 }
 
 .food-item a:hover {
@@ -185,14 +186,18 @@ nav {
     padding-bottom: 100px;
 }
 
-.specialities-h1 {
+.specialities-h1,
+.special-menu-h1,
+.our-menu-h1,
+.booking-table-h1 {
     font-family: 'Rochester', cursive;
     font-size: 40px;
     color: #F2AC32;
     margin-bottom: 15px;
 }
 
-.specialities-h2 {
+.specialities-h2,
+.our-menu-h2 {
     font-size: 50px;
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -254,7 +259,8 @@ nav {
     right: 0;
 }
 
-.specialities-row {
+.specialities-row,
+.our-menu-row {
     display: flex;
     justify-content: center;
 }
@@ -316,15 +322,8 @@ nav {
     flex-wrap: wrap;
 }
 
-.special-menu-h1,
-.our-menu-h1 {
-    font-family: 'Rochester', cursive;
-    color: #F2AC32;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
-
-.special-menu-h2 {
+.special-menu-h2,
+.booking-table-h2 {
     color: #000;
     margin-bottom: 50px;
     font-family: 'Oswald', sans-serif;
@@ -345,7 +344,6 @@ nav {
     width: 40px;
     border-bottom: 2px solid #fff;
     margin: 15px auto;
-
 }
 
 .special-menu-h4 {
@@ -383,31 +381,32 @@ nav {
     background-color: #F2AC32;
     color: #fff;
     justify-content: center;
-
 }
 
 .fa-ice-cream,
-.fa-pizza-slice {
+.fa-bread-slice {
     width: 100%;
     font-size: 50px;
     margin-bottom: 10px;
 }
 
 .col-large-2 {
-    background-image: url("../images/ice-cream.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../images/eggs-ben.jpg");
 }
 
 .col-large-4 {
-    background-image: url("../images/pizza.jpg");
+    background-image: url("../images/ice-cream.png");
+}
+
+.col-large-2,
+.col-large-4 {
     background-size: cover;
     background-position: center;
 }
 
 .fa-drumstick-bite,
 .fa-utensils,
-.fa-cheese,
+.fa-pizza-slice,
 .fa-fish {
     color: #F2AC32;
     font-size: 50px;
@@ -430,24 +429,24 @@ nav {
 
 .col-small-2 {
     background-image: url("../images/grilled-chicken.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .col-small-3 {
     background-image: url("../images/salmon.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .col-small-4 {
     background-image: url("../images/pasta2.jpg");
-    background-size: cover;
-    background-position: center;
 }
 
 .col-small-5 {
-    background-image: url("../images/chocolate-cake.jpg");
+    background-image: url("../images/pizza.jpg");
+}
+
+.col-small-2,
+.col-small-3,
+.col-small-4,
+.col-small-5 {
     background-size: cover;
     background-position: center;
 }
@@ -482,18 +481,12 @@ nav {
 .our-menu-section {
     background:
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0,0,0,0.7)),
-        url(../images/ingredients.jpg);
+        url("../images/ingredients.jpg");
     background-size: cover;
     text-align: center;
-    padding: 100px 50px;
-}
-
-.our-menu-h2 {
-    color: #fff;
-    margin-bottom: 50px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 50px;
-    letter-spacing: 2px;
+    padding: 0px 50px;
+    padding-top: 50px;
+    padding-bottom: 70px;
 }
 
 .food-container {
@@ -501,11 +494,6 @@ nav {
     text-align: left;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 25px;
-}
-
-.our-menu-row {
-    display: flex;
-    justify-content: center;
 }
 
 .our-menu-col {
@@ -547,3 +535,120 @@ nav {
     padding: 10px 20px;
 }
 /********** END OUR MENU SECTION ***********/
+
+/********** START BOOKING TABLE SECTION **********/
+.booking-table-section {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.booking-table-row,
+.footer-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.booking-table-row {
+    font-family: 'Oswald', sans-serif;
+}
+
+.booking-div {
+    background-color: #F2AC32;
+    margin: 30px 15px;
+}
+
+.booking-icon {
+    display: inline-block;
+    border-right: 2px solid #f0f0f0;
+}
+
+.booking-icon,
+.booking-data {
+    padding: 10px 20px;
+}
+
+.booking-cta-button {
+    color: #fff;
+    background-color: #F2AC32;
+    text-decoration: none;
+    padding: 10px 40px;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.booking-cta-button:hover {
+    background-color: rgb(196, 137, 36);
+}
+/********** END BOOKING TABLE SECTION ***********/
+
+/********** START FOOTER SECTION **********/
+footer {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)),
+        url("../images/footer.jpg");
+    background-size: cover;
+    padding: 40px 0px;
+    padding-bottom: 0;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.footer-col {
+    margin: 30px 50px;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: #F2AC32;
+    margin-bottom: 30px;
+}
+
+.footer-col p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-email {
+    padding: 10px 22px;
+    width: 200px;
+    height: 45px;
+}
+
+.footer-subscribe {
+    display: inline-block;
+    width: 200px;
+    height: 45px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #F2AC32;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 45px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-subscribe:hover {
+    background-color: rgb(196, 137, 36);
+}
+
+.copyright {
+    padding: 20px;
+    font-size: 11px;
+    text-align: center;
+    border-top: 1px solid #f0f0f04f;
+    margin-top: 40px;
+}
+
+.copyright-name {
+    color: #008000;
+    text-decoration: none;
+}
+/********** END FOOTER SECTION ***********/
